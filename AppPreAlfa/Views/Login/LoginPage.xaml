@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="AppPreAlfa.Views.Login.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="using:AppPreAlfa.ViewModels.Login"
+    Background="White">
+
+    <!-- MODIFICACIÓN: Se eliminó la sección <Page.DataContext> que creaba un ViewModel extra. -->
+    <!-- El DataContext ahora se asigna únicamente en el archivo code-behind. -->
+
+    <Grid>
+        <ContentControl
+            Content="{Binding CurrentStepView}"
+            HorizontalContentAlignment="Stretch"
+            VerticalContentAlignment="Stretch"/>
+    </Grid>
+</Page>

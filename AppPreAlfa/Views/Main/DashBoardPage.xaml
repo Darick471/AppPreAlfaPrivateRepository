@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="AppPreAlfa.Views.Main.DashBoardPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="using:AppPreAlfa.ViewModels.Main"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <!-- Botones actualizados con bindings reactivos -->
+        <Button Content="Mi Perfil" Command="{Binding NavigateToUserInfoCommand}"/>
+        <Button Content="Cerrar sesión" Command="{Binding LogoutCommand}"/>
+    </Grid>
+</Page>
